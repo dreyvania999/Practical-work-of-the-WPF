@@ -33,10 +33,10 @@
                     
                     <WrapPanel Orientation="Horizontal">
                         <TextBlock Margin="15,20,10,20">Введите километры</TextBlock>
-                        <TextBox Name="inputKM" Width="200" Margin="0,20,0,20" />
+                        <TextBox Name="inputKM" Width="200" Margin="0,20,0,20" TextChanged="inputKM_TextChanged" />
 
-                        <TextBlock Margin="10,20,10,20">Введите метры</TextBlock>
-                        <TextBox Name="inputM" Width="200" Margin="0,20,0,20"/>
+                        <TextBlock Margin="10,20,10,20" >Введите метры</TextBlock>
+                        <TextBox Name="inputM" Width="200" Margin="0,20,0,20" TextChanged="inputM_TextChanged"/>
                     </WrapPanel>
                 </StackPanel>
 
@@ -56,7 +56,7 @@
                 <StackPanel Name="squareTreagleABC" Visibility="Collapsed">
                     <WrapPanel Orientation="Horizontal">
                         <TextBlock Margin="15,20,10,20" Name="inputSombady">Введите </TextBlock>
-                        <TextBox Name="inputS" Width="200" Margin="0,20,0,20"/>
+                        <TextBox Name="inputS" Width="200" Margin="0,20,0,20" TextChanged="inputM_TextChanged"/>
                     </WrapPanel>
                 </StackPanel>
                 

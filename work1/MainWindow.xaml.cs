@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -120,6 +121,21 @@ namespace work1
             ddd.Visibility = Visibility.Visible;
 
         }
-
+private void inputM_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+                textBox.Text = new string
+                    (textBox.Text.Where(ch => (ch >= '0' && ch <= '9') || (ch == ',')).ToArray());
+            }
+        }
+        private void inputKM_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+                textBox.Text = new string
+                    (textBox.Text.Where(ch => (ch >= '0' && ch <= '9')).ToArray());
+            }
+        }
     }
 }
