@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:work1"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="styleForms" TargetType="Window">
+            <Setter Property="FontFamily" Value="Century Gotic"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Background" Value="LemonChiffon"/>
+        </Style>
+            <ControlTemplate TargetType="Button"  x:Key="btn">
+            <Border CornerRadius="20" Background="DarkOliveGreen"
+                    Height="35" Width="250">
+                <ContentControl VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"  Content="Получить результат" />
+            </Border>
+        </ControlTemplate>
     </Application.Resources>
 </Application>

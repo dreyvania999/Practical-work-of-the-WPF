@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:work1"
         mc:Ignorable="d"
-        Title="Переводчик едениц измерения длинны" Height="450" Width="800">
+        Title="Переводчик едениц измерения длинны" Height="450" Width="800"
+        Style="{StaticResource styleForms}">     
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -62,7 +63,7 @@
                 
                 <StackPanel Name="ddd" Visibility="Collapsed">
 
-                    <Button  Content="Получить результат" Name="BTddd" Click="BTddd_Click"/>
+                    <Button Template="{StaticResource btn}" Name="BTddd" Click="BTddd_Click"/>
                 </StackPanel>
 
             </StackPanel>
